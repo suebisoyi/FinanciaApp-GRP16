@@ -80,6 +80,9 @@
 		1DF1609325F1B10100407401 /* adv1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DF1609125F1B10000407401 /* adv1.png */; };
 		1DF1609425F1B10100407401 /* adv2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DF1609225F1B10100407401 /* adv2.png */; };
 		1DF1609725F1B19400407401 /* adv3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DF1609625F1B19400407401 /* adv3.png */; };
+		5F8A77A12609A59A002153C5 /* IntermediateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A77A02609A59A002153C5 /* IntermediateController.swift */; };
+		5F8A77A42609A5A8002153C5 /* AdvancedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A77A32609A5A8002153C5 /* AdvancedController.swift */; };
+		5F8A77A62609A5B4002153C5 /* PaymentOptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A77A52609A5B4002153C5 /* PaymentOptionsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -158,6 +161,9 @@
 		1DF1609125F1B10000407401 /* adv1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adv1.png; sourceTree = "<group>"; };
 		1DF1609225F1B10100407401 /* adv2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adv2.png; sourceTree = "<group>"; };
 		1DF1609625F1B19400407401 /* adv3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adv3.png; sourceTree = "<group>"; };
+		5F8A77A02609A59A002153C5 /* IntermediateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediateController.swift; sourceTree = "<group>"; };
+		5F8A77A32609A5A8002153C5 /* AdvancedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedController.swift; sourceTree = "<group>"; };
+		5F8A77A52609A5B4002153C5 /* PaymentOptionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOptionsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +302,9 @@
 				1DF1606A25F1946400407401 /* CalculatorController.swift */,
 				1DF1606D25F1948000407401 /* AdvisorChatController.swift */,
 				1D3B154525F43E9D00596B4F /* ToolsController.swift */,
+				5F8A77A02609A59A002153C5 /* IntermediateController.swift */,
+				5F8A77A32609A5A8002153C5 /* AdvancedController.swift */,
+				5F8A77A52609A5B4002153C5 /* PaymentOptionsController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -430,11 +439,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DF1603525F1674D00407401 /* LevelsController.swift in Sources */,
+				5F8A77A42609A5A8002153C5 /* AdvancedController.swift in Sources */,
 				1D06051D25F149BE00BD37F9 /* ViewController.swift in Sources */,
+				5F8A77A62609A5B4002153C5 /* PaymentOptionsController.swift in Sources */,
 				1DF1606E25F1948000407401 /* AdvisorChatController.swift in Sources */,
 				1DF1606B25F1946400407401 /* CalculatorController.swift in Sources */,
 				1D06051925F149BE00BD37F9 /* AppDelegate.swift in Sources */,
 				1D06051B25F149BE00BD37F9 /* SceneDelegate.swift in Sources */,
+				5F8A77A12609A59A002153C5 /* IntermediateController.swift in Sources */,
 				1D3B154625F43E9D00596B4F /* ToolsController.swift in Sources */,
 				1DF1606825F1943600407401 /* MainMenuViewController.swift in Sources */,
 				1DF1606525F1942400407401 /* ChoiceController.swift in Sources */,
