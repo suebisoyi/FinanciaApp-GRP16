@@ -13,6 +13,9 @@
 		1D06052025F149BE00BD37F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D06051E25F149BE00BD37F9 /* Main.storyboard */; };
 		1D06052225F149C000BD37F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D06052125F149C000BD37F9 /* Assets.xcassets */; };
 		1D06052525F149C000BD37F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D06052325F149C000BD37F9 /* LaunchScreen.storyboard */; };
+		1D22D66A26096D8F00378DD4 /* interest-ratePIC.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D22D66926096D8F00378DD4 /* interest-ratePIC.png */; };
+		1D22D66E26097D9300378DD4 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D22D66D26097D9300378DD4 /* Question.swift */; };
+		1D22D6712609803B00378DD4 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D22D6702609803B00378DD4 /* QuestionBank.swift */; };
 		1D3B151F25F42AD600596B4F /* p4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D3B151B25F42AD500596B4F /* p4.png */; };
 		1D3B152025F42AD600596B4F /* p1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D3B151C25F42AD600596B4F /* p1.png */; };
 		1D3B152125F42AD600596B4F /* p2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D3B151D25F42AD600596B4F /* p2.png */; };
@@ -91,6 +94,9 @@
 		1D06052125F149C000BD37F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D06052425F149C000BD37F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D06052625F149C000BD37F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D22D66926096D8F00378DD4 /* interest-ratePIC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "interest-ratePIC.png"; sourceTree = "<group>"; };
+		1D22D66D26097D9300378DD4 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		1D22D6702609803B00378DD4 /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
 		1D3B151B25F42AD500596B4F /* p4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p4.png; sourceTree = "<group>"; };
 		1D3B151C25F42AD600596B4F /* p1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p1.png; sourceTree = "<group>"; };
 		1D3B151D25F42AD600596B4F /* p2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p2.png; sourceTree = "<group>"; };
@@ -190,6 +196,7 @@
 		1D06051725F149BE00BD37F9 /* Financia */ = {
 			isa = PBXGroup;
 			children = (
+				1D22D66C26097D6600378DD4 /* Model */,
 				1DF1602925F14A8F00407401 /* View Controllers */,
 				1DF1602825F14A6A00407401 /* Storyboards */,
 				1DF1602725F14A6400407401 /* Classes */,
@@ -199,9 +206,19 @@
 			path = Financia;
 			sourceTree = "<group>";
 		};
+		1D22D66C26097D6600378DD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1D22D66D26097D9300378DD4 /* Question.swift */,
+				1D22D6702609803B00378DD4 /* QuestionBank.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1DF1602525F14A4C00407401 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1D22D66926096D8F00378DD4 /* interest-ratePIC.png */,
 				1DC7534325F46D14000357FF /* button_visiting-a-bank.png */,
 				1DC7534025F45B9E000357FF /* logoless.png */,
 				1DC7533D25F45603000357FF /* button_skip-login-signup.png */,
@@ -396,6 +413,7 @@
 				1D3B155425F4426700596B4F /* button_affordability-calculator.png in Resources */,
 				1D3B155E25F447F800596B4F /* button_calculate.png in Resources */,
 				1D3B152225F42AD600596B4F /* p3.png in Resources */,
+				1D22D66A26096D8F00378DD4 /* interest-ratePIC.png in Resources */,
 				1D3B153F25F43D1C00596B4F /* button_user-profile.png in Resources */,
 				1DF1606225F193A400407401 /* menu.jpg in Resources */,
 				1DC7534425F46D14000357FF /* button_visiting-a-bank.png in Resources */,
@@ -430,6 +448,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DF1603525F1674D00407401 /* LevelsController.swift in Sources */,
+				1D22D6712609803B00378DD4 /* QuestionBank.swift in Sources */,
 				1D06051D25F149BE00BD37F9 /* ViewController.swift in Sources */,
 				1DF1606E25F1948000407401 /* AdvisorChatController.swift in Sources */,
 				1DF1606B25F1946400407401 /* CalculatorController.swift in Sources */,
@@ -438,6 +457,7 @@
 				1D3B154625F43E9D00596B4F /* ToolsController.swift in Sources */,
 				1DF1606825F1943600407401 /* MainMenuViewController.swift in Sources */,
 				1DF1606525F1942400407401 /* ChoiceController.swift in Sources */,
+				1D22D66E26097D9300378DD4 /* Question.swift in Sources */,
 				1DF1602F25F166E600407401 /* SurveyController.swift in Sources */,
 				1DF1603925F1679100407401 /* BeginnerController.swift in Sources */,
 			);
