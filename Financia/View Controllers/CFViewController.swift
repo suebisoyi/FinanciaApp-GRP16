@@ -7,41 +7,53 @@ import UIKit
 
 class CFViewController: UIViewController {
     @IBOutlet weak var fieldSideIncome: UITextField!
-    @IBOutlet weak var fieldExpenses: UITextField!
     @IBOutlet weak var fieldIncome: UITextField!
-    @IBOutlet weak var statement: UILabel!
+    @IBOutlet weak var expense3: UITextField!
+    @IBOutlet weak var expense2: UITextField!
+    @IBOutlet weak var expense1: UITextField!
+    
+    @IBOutlet weak var nextBtn: UIButton!
+    var mainIncome = 0
+    var sideIncome = 0
+    var e1 = 0
+    var e2 = 0
+    var e3 = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        statement.isHidden = true
+        fieldSideIncome.delegate = self
+        fieldIncome.delegate = self
+        expense3.delegate = self
+        expense2.delegate = self
+        expense1.delegate = self
     }
     
     
-    @IBAction func calculateButton(_ sender: Any) {
-        let mainIncome = Double(fieldIncome.text!)
-        var sideIncome = Double(fieldSideIncome.text!)
-        let expenses = Double(fieldExpenses.text!)
-        statement.isHidden = false
-        if(mainIncome != nil && expenses != nil){
-            if(sideIncome == nil){
-                sideIncome = 0
-            }
-            if(mainIncome! + sideIncome! - expenses! < 0){
-                statement.text = "Deficit Cast!\nExpenses are greater than income!\nYour current cashflow is \(mainIncome! + sideIncome! - expenses!)."
-                statement.textColor = UIColor.red
-            }else{
-                statement.text = "Surplus Cast!\nIncome is greater than total expenses!\nYour currebt cashflow is \(mainIncome! + sideIncome! - expenses!)."
-                statement.textColor = UIColor.green
-            }
-        }else{
-            statement.textColor = UIColor.red
-            if(fieldIncome == nil){
-                statement.text = "Income Field is missing!"
-            }else{
-                statement.text = "Expenses Field is missing!"
-            }
+    @IBAction func nextStep(_ sender: UIButton) {
+        self.mainIncome = Int(fieldIncome.text!)!
+        self.sideIncome = Int(fieldSideIncome.text!)!
+        self.e1 = Int(expense1.text!)!
+        self.e2 = Int(expense2.text!)!
+        self.e3 = Int(expense3.text!)!
+        performSegue(withIdentifier: "finishSetup", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "finishSetup"){
+            let vc = segue.destination as! FinalCFViewController
+            vc.income = self.mainIncome
+            vc.sideIncome = self.sideIncome
+            vc.expense1 = self.e1
+            vc.expense2 = self.e2
+            vc.expense3 = self.e3
         }
     }
     
 }
-    
+
+extension CFViewController : UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }}

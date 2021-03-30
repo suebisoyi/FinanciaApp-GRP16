@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C29D1BB260A394700BBA8EF /* CFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C29D1BA260A394700BBA8EF /* CFViewController.swift */; };
+		0C649C8626137289008C0BE9 /* FinalCFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C649C8526137289008C0BE9 /* FinalCFViewController.swift */; };
 		1D06051925F149BE00BD37F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D06051825F149BE00BD37F9 /* AppDelegate.swift */; };
 		1D06051B25F149BE00BD37F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D06051A25F149BE00BD37F9 /* SceneDelegate.swift */; };
 		1D06051D25F149BE00BD37F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D06051C25F149BE00BD37F9 /* ViewController.swift */; };
@@ -85,6 +86,7 @@
 
 /* Begin PBXFileReference section */
 		0C29D1BA260A394700BBA8EF /* CFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFViewController.swift; sourceTree = "<group>"; };
+		0C649C8526137289008C0BE9 /* FinalCFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCFViewController.swift; sourceTree = "<group>"; };
 		1D06051525F149BE00BD37F9 /* Financia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Financia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D06051825F149BE00BD37F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D06051A25F149BE00BD37F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 				1DF1606D25F1948000407401 /* AdvisorChatController.swift */,
 				1D3B154525F43E9D00596B4F /* ToolsController.swift */,
 				0C29D1BA260A394700BBA8EF /* CFViewController.swift */,
+				0C649C8526137289008C0BE9 /* FinalCFViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				1DF1606525F1942400407401 /* ChoiceController.swift in Sources */,
 				0C29D1BB260A394700BBA8EF /* CFViewController.swift in Sources */,
 				1DF1602F25F166E600407401 /* SurveyController.swift in Sources */,
+				0C649C8626137289008C0BE9 /* FinalCFViewController.swift in Sources */,
 				1DF1603925F1679100407401 /* BeginnerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
