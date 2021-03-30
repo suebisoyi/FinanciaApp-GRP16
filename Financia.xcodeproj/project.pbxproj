@@ -53,6 +53,13 @@
 		1DC7533E25F45603000357FF /* button_skip-login-signup.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC7533D25F45603000357FF /* button_skip-login-signup.png */; };
 		1DC7534125F45B9F000357FF /* logoless.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC7534025F45B9E000357FF /* logoless.png */; };
 		1DC7534425F46D14000357FF /* button_visiting-a-bank.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC7534325F46D14000357FF /* button_visiting-a-bank.png */; };
+		1DE0EC292612D6A600E24D96 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE0EC282612D6A600E24D96 /* LoginController.swift */; };
+		1DE0EC2C2612D70100E24D96 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE0EC2B2612D70100E24D96 /* SignUpController.swift */; };
+		1DE0EC2F2612E15200E24D96 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE0EC2E2612E15200E24D96 /* ProfileViewController.swift */; };
+		1DE0EC352612E8D500E24D96 /* QuizYourself.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0EC322612E8D500E24D96 /* QuizYourself.png */; };
+		1DE0EC362612E8D500E24D96 /* WordBank.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0EC332612E8D500E24D96 /* WordBank.png */; };
+		1DE0EC3A2612E9D900E24D96 /* tblBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0EC392612E9D900E24D96 /* tblBackground.jpg */; };
+		1DE0EC3D2612F30200E24D96 /* btnBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0EC3C2612F30100E24D96 /* btnBackground.png */; };
 		1DF1602F25F166E600407401 /* SurveyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF1602E25F166E600407401 /* SurveyController.swift */; };
 		1DF1603525F1674D00407401 /* LevelsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF1603425F1674D00407401 /* LevelsController.swift */; };
 		1DF1603925F1679100407401 /* BeginnerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF1603825F1679100407401 /* BeginnerController.swift */; };
@@ -134,6 +141,13 @@
 		1DC7533D25F45603000357FF /* button_skip-login-signup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_skip-login-signup.png"; sourceTree = "<group>"; };
 		1DC7534025F45B9E000357FF /* logoless.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoless.png; sourceTree = "<group>"; };
 		1DC7534325F46D14000357FF /* button_visiting-a-bank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_visiting-a-bank.png"; sourceTree = "<group>"; };
+		1DE0EC282612D6A600E24D96 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		1DE0EC2B2612D70100E24D96 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		1DE0EC2E2612E15200E24D96 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1DE0EC322612E8D500E24D96 /* QuizYourself.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuizYourself.png; sourceTree = "<group>"; };
+		1DE0EC332612E8D500E24D96 /* WordBank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WordBank.png; sourceTree = "<group>"; };
+		1DE0EC392612E9D900E24D96 /* tblBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tblBackground.jpg; sourceTree = "<group>"; };
+		1DE0EC3C2612F30100E24D96 /* btnBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnBackground.png; sourceTree = "<group>"; };
 		1DF1602E25F166E600407401 /* SurveyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyController.swift; sourceTree = "<group>"; };
 		1DF1603425F1674D00407401 /* LevelsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsController.swift; sourceTree = "<group>"; };
 		1DF1603825F1679100407401 /* BeginnerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginnerController.swift; sourceTree = "<group>"; };
@@ -218,6 +232,10 @@
 		1DF1602525F14A4C00407401 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1DE0EC3C2612F30100E24D96 /* btnBackground.png */,
+				1DE0EC392612E9D900E24D96 /* tblBackground.jpg */,
+				1DE0EC322612E8D500E24D96 /* QuizYourself.png */,
+				1DE0EC332612E8D500E24D96 /* WordBank.png */,
 				1D22D66926096D8F00378DD4 /* interest-ratePIC.png */,
 				1DC7534325F46D14000357FF /* button_visiting-a-bank.png */,
 				1DC7534025F45B9E000357FF /* logoless.png */,
@@ -313,6 +331,9 @@
 				1DF1606A25F1946400407401 /* CalculatorController.swift */,
 				1DF1606D25F1948000407401 /* AdvisorChatController.swift */,
 				1D3B154525F43E9D00596B4F /* ToolsController.swift */,
+				1DE0EC282612D6A600E24D96 /* LoginController.swift */,
+				1DE0EC2B2612D70100E24D96 /* SignUpController.swift */,
+				1DE0EC2E2612E15200E24D96 /* ProfileViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -378,6 +399,7 @@
 				1DF1605C25F1901300407401 /* logo.jpg in Resources */,
 				1D3B153525F4371D00596B4F /* i1.png in Resources */,
 				1DF1608525F1A4AD00407401 /* button_skip-the-survey.png in Resources */,
+				1DE0EC3A2612E9D900E24D96 /* tblBackground.jpg in Resources */,
 				1DF1607B25F1A1F800407401 /* button_d-line-of-credit.png in Resources */,
 				1DF1608A25F1A70500407401 /* button_advanced.png in Resources */,
 				1D3B154025F43D1C00596B4F /* button_chat-with-advisor.png in Resources */,
@@ -394,6 +416,7 @@
 				1D3B153725F4371D00596B4F /* i3.png in Resources */,
 				1D3B154925F43FD000596B4F /* search.jpg in Resources */,
 				1D3B155525F4426700596B4F /* button_time-value-of-money-calculator.png in Resources */,
+				1DE0EC362612E8D500E24D96 /* WordBank.png in Resources */,
 				1D3B152825F42EEC00596B4F /* b1.png in Resources */,
 				1D3B151F25F42AD600596B4F /* p4.png in Resources */,
 				1DF1607F25F1A33A00407401 /* button_done.png in Resources */,
@@ -413,6 +436,7 @@
 				1D3B155425F4426700596B4F /* button_affordability-calculator.png in Resources */,
 				1D3B155E25F447F800596B4F /* button_calculate.png in Resources */,
 				1D3B152225F42AD600596B4F /* p3.png in Resources */,
+				1DE0EC352612E8D500E24D96 /* QuizYourself.png in Resources */,
 				1D22D66A26096D8F00378DD4 /* interest-ratePIC.png in Resources */,
 				1D3B153F25F43D1C00596B4F /* button_user-profile.png in Resources */,
 				1DF1606225F193A400407401 /* menu.jpg in Resources */,
@@ -423,6 +447,7 @@
 				1D3B155225F4426700596B4F /* button_mortgage-calculator.png in Resources */,
 				1D3B152E25F430AB00596B4F /* pr3.png in Resources */,
 				1D3B152925F42EEC00596B4F /* b2.png in Resources */,
+				1DE0EC3D2612F30200E24D96 /* btnBackground.png in Resources */,
 				1D3B154125F43D1C00596B4F /* button_tools.png in Resources */,
 				1D3B154325F43D1C00596B4F /* button_q-as.png in Resources */,
 				1DF1607A25F1A1F800407401 /* button_a-car-loans.png in Resources */,
@@ -452,6 +477,8 @@
 				1D06051D25F149BE00BD37F9 /* ViewController.swift in Sources */,
 				1DF1606E25F1948000407401 /* AdvisorChatController.swift in Sources */,
 				1DF1606B25F1946400407401 /* CalculatorController.swift in Sources */,
+				1DE0EC2C2612D70100E24D96 /* SignUpController.swift in Sources */,
+				1DE0EC2F2612E15200E24D96 /* ProfileViewController.swift in Sources */,
 				1D06051925F149BE00BD37F9 /* AppDelegate.swift in Sources */,
 				1D06051B25F149BE00BD37F9 /* SceneDelegate.swift in Sources */,
 				1D3B154625F43E9D00596B4F /* ToolsController.swift in Sources */,
@@ -460,6 +487,7 @@
 				1D22D66E26097D9300378DD4 /* Question.swift in Sources */,
 				1DF1602F25F166E600407401 /* SurveyController.swift in Sources */,
 				1DF1603925F1679100407401 /* BeginnerController.swift in Sources */,
+				1DE0EC292612D6A600E24D96 /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

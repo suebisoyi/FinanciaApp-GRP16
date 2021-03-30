@@ -16,7 +16,6 @@ class QuestionBank{
         list.append(Question(image: "p4.png", questionText: "What is the maximum amortization period in Canada for an uninsured mortgage?", choiceA: "A. 20 years", choiceB: "B. 25 years", choiceC: "C. 30 years", choiceD: "50 years", answer: 3))
         
         list.append(Question(image: "p3.png", questionText: "Pick the best choice for compounding for you?", choiceA: "A. Compounding monthly", choiceB: "B. Compounding quarterly", choiceC: "C. Compounding annually", choiceD: "D. Compounding weekly", answer: 1))
-        
       
     }
 }

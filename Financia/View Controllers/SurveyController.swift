@@ -33,7 +33,6 @@ class SurveyController: UIViewController {
         super.viewDidLoad()
                updateQuestion()
                updateUI()
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,11 +43,8 @@ class SurveyController: UIViewController {
         if sender.tag == selectedAnswer {
                     print("Fantastic!")
                     score += 1
-                    
                 }else{
                     print("Good Try!")
-                    
-                    
                 }
                 
                 questionNumber += 1
@@ -73,8 +69,6 @@ class SurveyController: UIViewController {
                 alert.addAction(restartAction)
                 present(alert, animated: true, completion: nil)
             }
-            
-            
         }
         
         func updateUI(){
