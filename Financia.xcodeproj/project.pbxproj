@@ -3,14 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1D06051925F149BE00BD37F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D06051825F149BE00BD37F9 /* AppDelegate.swift */; };
 		1D06051B25F149BE00BD37F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D06051A25F149BE00BD37F9 /* SceneDelegate.swift */; };
 		1D06051D25F149BE00BD37F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D06051C25F149BE00BD37F9 /* ViewController.swift */; };
-		1D06052025F149BE00BD37F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D06051E25F149BE00BD37F9 /* Main.storyboard */; };
 		1D06052225F149C000BD37F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D06052125F149C000BD37F9 /* Assets.xcassets */; };
 		1D06052525F149C000BD37F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D06052325F149C000BD37F9 /* LaunchScreen.storyboard */; };
 		1D3B151F25F42AD600596B4F /* p4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D3B151B25F42AD500596B4F /* p4.png */; };
@@ -80,6 +79,14 @@
 		1DF1609325F1B10100407401 /* adv1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DF1609125F1B10000407401 /* adv1.png */; };
 		1DF1609425F1B10100407401 /* adv2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DF1609225F1B10100407401 /* adv2.png */; };
 		1DF1609725F1B19400407401 /* adv3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DF1609625F1B19400407401 /* adv3.png */; };
+		C7D0664C26137802002BAFF2 /* WordBank.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D0664B26137801002BAFF2 /* WordBank.png */; };
+		C7D0665426137838002BAFF2 /* Database in Resources */ = {isa = PBXBuildFile; fileRef = C7D0665326137838002BAFF2 /* Database */; };
+		C7D0665726137840002BAFF2 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7D0665626137840002BAFF2 /* Auth0.plist */; };
+		C7D0665C26137854002BAFF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D0665A26137854002BAFF2 /* Main.storyboard */; };
+		C7D0666026137868002BAFF2 /* WordBankTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0665F26137868002BAFF2 /* WordBankTableController.swift */; };
+		C7D06667261378B4002BAFF2 /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = C7D06666261378B4002BAFF2 /* Auth0 */; };
+		C7D0666B2613790A002BAFF2 /* SiteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D066692613790A002BAFF2 /* SiteCell.swift */; };
+		C7D0666C2613790A002BAFF2 /* WordBankWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0666A2613790A002BAFF2 /* WordBankWords.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,7 +94,6 @@
 		1D06051825F149BE00BD37F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D06051A25F149BE00BD37F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1D06051C25F149BE00BD37F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1D06051F25F149BE00BD37F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D06052125F149C000BD37F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D06052425F149C000BD37F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D06052625F149C000BD37F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -158,6 +164,15 @@
 		1DF1609125F1B10000407401 /* adv1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adv1.png; sourceTree = "<group>"; };
 		1DF1609225F1B10100407401 /* adv2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adv2.png; sourceTree = "<group>"; };
 		1DF1609625F1B19400407401 /* adv3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adv3.png; sourceTree = "<group>"; };
+		C7D0664B26137801002BAFF2 /* WordBank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WordBank.png; sourceTree = "<group>"; };
+		C7D0665326137838002BAFF2 /* Database */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Database; sourceTree = "<group>"; };
+		C7D0665626137840002BAFF2 /* Auth0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
+		C7D0665B26137854002BAFF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7D0665F26137868002BAFF2 /* WordBankTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordBankTableController.swift; sourceTree = "<group>"; };
+		C7D0666326137876002BAFF2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C7D0666426137876002BAFF2 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		C7D066692613790A002BAFF2 /* SiteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteCell.swift; sourceTree = "<group>"; };
+		C7D0666A2613790A002BAFF2 /* WordBankWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordBankWords.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D06667261378B4002BAFF2 /* Auth0 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +192,7 @@
 			children = (
 				1D06051725F149BE00BD37F9 /* Financia */,
 				1D06051625F149BE00BD37F9 /* Products */,
+				C7D0666226137875002BAFF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,6 +207,8 @@
 		1D06051725F149BE00BD37F9 /* Financia */ = {
 			isa = PBXGroup;
 			children = (
+				C7D0665626137840002BAFF2 /* Auth0.plist */,
+				C7D0665326137838002BAFF2 /* Database */,
 				1DF1602925F14A8F00407401 /* View Controllers */,
 				1DF1602825F14A6A00407401 /* Storyboards */,
 				1DF1602725F14A6400407401 /* Classes */,
@@ -202,6 +221,7 @@
 		1DF1602525F14A4C00407401 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C7D0664B26137801002BAFF2 /* WordBank.png */,
 				1DC7534325F46D14000357FF /* button_visiting-a-bank.png */,
 				1DC7534025F45B9E000357FF /* logoless.png */,
 				1DC7533D25F45603000357FF /* button_skip-login-signup.png */,
@@ -269,6 +289,8 @@
 		1DF1602725F14A6400407401 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C7D066692613790A002BAFF2 /* SiteCell.swift */,
+				C7D0666A2613790A002BAFF2 /* WordBankWords.swift */,
 				1D06051825F149BE00BD37F9 /* AppDelegate.swift */,
 				1D06051A25F149BE00BD37F9 /* SceneDelegate.swift */,
 			);
@@ -278,8 +300,8 @@
 		1DF1602825F14A6A00407401 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				C7D0665A26137854002BAFF2 /* Main.storyboard */,
 				1D06052325F149C000BD37F9 /* LaunchScreen.storyboard */,
-				1D06051E25F149BE00BD37F9 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -287,6 +309,7 @@
 		1DF1602925F14A8F00407401 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C7D0665F26137868002BAFF2 /* WordBankTableController.swift */,
 				1D06051C25F149BE00BD37F9 /* ViewController.swift */,
 				1DF1602E25F166E600407401 /* SurveyController.swift */,
 				1DF1603425F1674D00407401 /* LevelsController.swift */,
@@ -298,6 +321,15 @@
 				1D3B154525F43E9D00596B4F /* ToolsController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C7D0666226137875002BAFF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7D0666426137876002BAFF2 /* libsqlite3.0.tbd */,
+				C7D0666326137876002BAFF2 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +348,9 @@
 			dependencies = (
 			);
 			name = Financia;
+			packageProductDependencies = (
+				C7D06666261378B4002BAFF2 /* Auth0 */,
+			);
 			productName = Financia;
 			productReference = 1D06051525F149BE00BD37F9 /* Financia.app */;
 			productType = "com.apple.product-type.application";
@@ -343,6 +378,9 @@
 				Base,
 			);
 			mainGroup = 1D06050C25F149BE00BD37F9;
+			packageReferences = (
+				C7D06665261378B4002BAFF2 /* XCRemoteSwiftPackageReference "Auth0.swift" */,
+			);
 			productRefGroup = 1D06051625F149BE00BD37F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -380,18 +418,19 @@
 				1D3B152825F42EEC00596B4F /* b1.png in Resources */,
 				1D3B151F25F42AD600596B4F /* p4.png in Resources */,
 				1DF1607F25F1A33A00407401 /* button_done.png in Resources */,
+				C7D0664C26137802002BAFF2 /* WordBank.png in Resources */,
 				1DF1609425F1B10100407401 /* adv2.png in Resources */,
 				1DF1608F25F1AC8D00407401 /* Reel.png in Resources */,
 				1DF1605825F18E4700407401 /* 1Backg.jpg in Resources */,
 				1DF1608225F1A49F00407401 /* button_take-the-survey.png in Resources */,
 				1DF1607C25F1A1F800407401 /* button_b-credit-card.png in Resources */,
+				C7D0665426137838002BAFF2 /* Database in Resources */,
 				1D3B156A25F44C3D00596B4F /* button_book-an-appointment.png in Resources */,
 				1D3B156525F44B0000596B4F /* fin3.png in Resources */,
 				1DF1607325F199EF00407401 /* button_log-in.png in Resources */,
 				1D3B153025F430AB00596B4F /* pr1.png in Resources */,
 				1D3B154225F43D1C00596B4F /* button_content-levels.png in Resources */,
 				1D3B156425F44B0000596B4F /* fin1.png in Resources */,
-				1D06052025F149BE00BD37F9 /* Main.storyboard in Resources */,
 				1DC7533B25F455F7000357FF /* button_go-to-homepage.png in Resources */,
 				1D3B155425F4426700596B4F /* button_affordability-calculator.png in Resources */,
 				1D3B155E25F447F800596B4F /* button_calculate.png in Resources */,
@@ -402,9 +441,11 @@
 				1DF1605F25F1904F00407401 /* bghome.jpg in Resources */,
 				1DC7534125F45B9F000357FF /* logoless.png in Resources */,
 				1D3B152F25F430AB00596B4F /* pr2.png in Resources */,
+				C7D0665C26137854002BAFF2 /* Main.storyboard in Resources */,
 				1D3B155225F4426700596B4F /* button_mortgage-calculator.png in Resources */,
 				1D3B152E25F430AB00596B4F /* pr3.png in Resources */,
 				1D3B152925F42EEC00596B4F /* b2.png in Resources */,
+				C7D0665726137840002BAFF2 /* Auth0.plist in Resources */,
 				1D3B154125F43D1C00596B4F /* button_tools.png in Resources */,
 				1D3B154325F43D1C00596B4F /* button_q-as.png in Resources */,
 				1DF1607A25F1A1F800407401 /* button_a-car-loans.png in Resources */,
@@ -437,6 +478,9 @@
 				1D06051B25F149BE00BD37F9 /* SceneDelegate.swift in Sources */,
 				1D3B154625F43E9D00596B4F /* ToolsController.swift in Sources */,
 				1DF1606825F1943600407401 /* MainMenuViewController.swift in Sources */,
+				C7D0666026137868002BAFF2 /* WordBankTableController.swift in Sources */,
+				C7D0666C2613790A002BAFF2 /* WordBankWords.swift in Sources */,
+				C7D0666B2613790A002BAFF2 /* SiteCell.swift in Sources */,
 				1DF1606525F1942400407401 /* ChoiceController.swift in Sources */,
 				1DF1602F25F166E600407401 /* SurveyController.swift in Sources */,
 				1DF1603925F1679100407401 /* BeginnerController.swift in Sources */,
@@ -446,20 +490,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1D06051E25F149BE00BD37F9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1D06051F25F149BE00BD37F9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1D06052325F149C000BD37F9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1D06052425F149C000BD37F9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C7D0665A26137854002BAFF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7D0665B26137854002BAFF2 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -639,6 +683,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C7D06665261378B4002BAFF2 /* XCRemoteSwiftPackageReference "Auth0.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/Auth0.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.32.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C7D06666261378B4002BAFF2 /* Auth0 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7D06665261378B4002BAFF2 /* XCRemoteSwiftPackageReference "Auth0.swift" */;
+			productName = Auth0;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1D06050D25F149BE00BD37F9 /* Project object */;
 }
