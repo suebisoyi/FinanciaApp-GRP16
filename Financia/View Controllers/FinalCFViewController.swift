@@ -38,41 +38,41 @@ class FinalCFViewController: UIViewController {
         var sideOtherIncome = Double(sideIncome)
         let expenses = Double(expense1 + expense2 + expense3)
         statement.isHidden = false
-        var totalExpenses = 0
+        var totalExpenses = 0.00
         if(expense4.text == nil){
             e4 = 0;
-            totalExpenses += e4;
+            totalExpenses += Double(e4);
         }
         
         if(expense5 == nil){
             e5 = 0;
-            totalExpenses += e5;
+            totalExpenses += Double(e5);
         }
         
         if(expense6 == nil){
             e6 = 0;
-            totalExpenses += e6;
+            totalExpenses += Double(e6);
         }
         
         if(expense7 == nil){
             e7 = 0;
-            totalExpenses += e7;
+            totalExpenses += Double(e7);
         }
         
         if(otherExpense.text == nil){
             otherExpenses = 0;
-            totalExpenses += otherExpenses;
+            totalExpenses += Double(otherExpenses);
         }
         
         if(mainIncome != nil && expenses != nil){
             if(sideIncome == nil){
                 sideIncome = 0
             }
-            if(Double(mainIncome! + sideIncome! - (expenses! + totalExpenses)) < 0.0){
-                statement.text = "Deficit Cast!\nExpenses are greater than income!\nYour current cashflow is \(mainIncome + Double(sideIncome!) - expenses!  - Double(totalExpenses))."
+            if(Double(mainIncome + Double(sideIncome) - expenses + totalExpenses) < 0.0){
+                statement.text = "Deficit Cast!\nExpenses are greater than income!\nYour current cashflow is \(mainIncome + Double(sideIncome) - expenses  - Double(totalExpenses))."
                 statement.textColor = UIColor.red
             }else{
-                statement.text = "Surplus Cast!\nIncome is greater than total expenses!\nYour current cashflow is \(mainIncome + Double(sideIncome!) - expenses! - Double(totalExpenses))."
+                statement.text = "Surplus Cast!\nIncome is greater than total expenses!\nYour current cashflow is \(mainIncome + Double(sideIncome) - expenses - Double(totalExpenses))."
                 statement.textColor = UIColor.green
             }
         }else{
