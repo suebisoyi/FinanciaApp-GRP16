@@ -68,11 +68,11 @@ class FinalCFViewController: UIViewController {
             if(sideIncome == nil){
                 sideIncome = 0
             }
-            if(Int(mainIncome!) + sideIncome! - (expenses! + totalExpenses) < 0){
-                statement.text = "Deficit Cast!\nExpenses are greater than income!\nYour current cashflow is \(mainIncome! + Double(sideIncome!) - expenses!  - totalExpenses)."
+            if(Double(mainIncome! + sideIncome! - (expenses! + totalExpenses)) < 0){
+                statement.text = "Deficit Cast!\nExpenses are greater than income!\nYour current cashflow is \(mainIncome! + Double(sideIncome!) - expenses!  - Double(totalExpenses))."
                 statement.textColor = UIColor.red
             }else{
-                statement.text = "Surplus Cast!\nIncome is greater than total expenses!\nYour current cashflow is \(mainIncome! + Double(sideIncome!) - expenses! - totalExpenses)."
+                statement.text = "Surplus Cast!\nIncome is greater than total expenses!\nYour current cashflow is \(mainIncome! + Double(sideIncome!) - expenses! - Double(totalExpenses))."
                 statement.textColor = UIColor.green
             }
         }else{
