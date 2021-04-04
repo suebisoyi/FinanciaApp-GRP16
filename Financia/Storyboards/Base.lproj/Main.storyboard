@@ -322,7 +322,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqK-F2-gvP">
-                                <rect key="frame" x="75" y="712" width="265" height="60"/>
+                                <rect key="frame" x="75" y="785" width="265" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="button_visiting-a-bank.png"/>
                             </button>
@@ -894,22 +894,12 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68n-Q5-3mK">
-                                <rect key="frame" x="11" y="334" width="101" height="93"/>
+                                <rect key="frame" x="126" y="334" width="101" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="p1.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usP-VO-6fE">
-                                <rect key="frame" x="120" y="334" width="101" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="p2.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ule-T3-JDa">
-                                <rect key="frame" x="229" y="332" width="101" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="p3.png"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7o-a2-tbL">
-                                <rect key="frame" x="339" y="333" width="101" height="93"/>
+                                <rect key="frame" x="11" y="334" width="101" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="p4.png"/>
                             </button>
@@ -933,6 +923,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="0.30330091710000001" green="0.08104682714" blue="0.3969293237" alpha="0.9995727539" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ule-T3-JDa">
+                                <rect key="frame" x="245" y="334" width="101" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="p3.png"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YgF-YZ-aWe"/>
@@ -1354,11 +1349,10 @@ Label prints "Surplus Cast!" IF( sum of expenses &lt; Sum of Incomes) Then it's 
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="G9F-Kf-Ahl"/>
-        <segue reference="DJR-Vh-wvo"/>
+        <segue reference="ozD-Pl-uDS"/>
         <segue reference="d1a-wl-A74"/>
         <segue reference="IMT-a2-8bw"/>
-        <segue reference="8Zd-Wm-XpE"/>
+        <segue reference="bJi-4A-3kQ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1Backg.jpg" width="1080" height="1696"/>
@@ -1407,7 +1401,6 @@ Label prints "Surplus Cast!" IF( sum of expenses &lt; Sum of Incomes) Then it's 
         <image name="logoless.png" width="626" height="398"/>
         <image name="menu.jpg" width="1080" height="1696"/>
         <image name="p1.png" width="410" height="352"/>
-        <image name="p2.png" width="409" height="350"/>
         <image name="p3.png" width="409" height="359"/>
         <image name="p4.png" width="406" height="345"/>
         <image name="pr1.png" width="412" height="337"/>
