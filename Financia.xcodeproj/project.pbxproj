@@ -83,6 +83,7 @@
 		5F8A77A12609A59A002153C5 /* IntermediateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A77A02609A59A002153C5 /* IntermediateController.swift */; };
 		5F8A77A42609A5A8002153C5 /* AdvancedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A77A32609A5A8002153C5 /* AdvancedController.swift */; };
 		5F8A77A62609A5B4002153C5 /* PaymentOptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A77A52609A5B4002153C5 /* PaymentOptionsController.swift */; };
+		5FADE2C6261BCE5500AF7B5C /* AccountsViewController1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FADE2C5261BCE5500AF7B5C /* AccountsViewController1ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -164,6 +165,7 @@
 		5F8A77A02609A59A002153C5 /* IntermediateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediateController.swift; sourceTree = "<group>"; };
 		5F8A77A32609A5A8002153C5 /* AdvancedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedController.swift; sourceTree = "<group>"; };
 		5F8A77A52609A5B4002153C5 /* PaymentOptionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOptionsController.swift; sourceTree = "<group>"; };
+		5FADE2C5261BCE5500AF7B5C /* AccountsViewController1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController1ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +307,7 @@
 				5F8A77A02609A59A002153C5 /* IntermediateController.swift */,
 				5F8A77A32609A5A8002153C5 /* AdvancedController.swift */,
 				5F8A77A52609A5B4002153C5 /* PaymentOptionsController.swift */,
+				5FADE2C5261BCE5500AF7B5C /* AccountsViewController1ViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FADE2C6261BCE5500AF7B5C /* AccountsViewController1ViewController.swift in Sources */,
 				1DF1603525F1674D00407401 /* LevelsController.swift in Sources */,
 				5F8A77A42609A5A8002153C5 /* AdvancedController.swift in Sources */,
 				1D06051D25F149BE00BD37F9 /* ViewController.swift in Sources */,

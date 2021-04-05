@@ -1429,6 +1429,9 @@ Label prints "Surplus Cast!" IF( sum of expenses &lt; Sum of Incomes) Then it's 
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="0.30330091710000001" green="0.08104682714" blue="0.3969293237" alpha="0.9995727539" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="TQ1-vY-MYg" kind="presentation" modalPresentationStyle="fullScreen" id="0GR-yD-dEB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcx-ZQ-rxA">
                                 <rect key="frame" x="74" y="573" width="266" height="40"/>
@@ -1468,8 +1471,6 @@ Label prints "Surplus Cast!" IF( sum of expenses &lt; Sum of Incomes) Then it's 
         <!--PaymentOptions Cntroller-->
         <scene sceneID="DnS-us-MFs">
             <objects>
-                <exit id="qd5-Cd-pAE" userLabel="Exit" sceneMemberID="exit"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bbK-04-gNG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="PaymentOptions Cntroller" id="TQ1-vY-MYg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U7L-vv-Fr0" customClass="BeginnerController">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1521,7 +1522,7 @@ Label prints "Surplus Cast!" IF( sum of expenses &lt; Sum of Incomes) Then it's 
                                         <leftBarButtonItems>
                                             <barButtonItem title="Back" id="fQI-xM-3FW">
                                                 <connections>
-                                                    <segue destination="qd5-Cd-pAE" kind="unwind" unwindAction="unwindToBeginnerViewControllerWithSender:" id="vGh-Un-sEv"/>
+                                                    <segue destination="qd5-Cd-pAE" kind="unwind" unwindAction="unwindToPaymentOptionsViewControllerWithSender:" id="n8A-81-nbp"/>
                                                 </connections>
                                             </barButtonItem>
                                             <barButtonItem title="Home" id="wWP-1n-ThH"/>
@@ -1624,6 +1625,8 @@ Label prints "Surplus Cast!" IF( sum of expenses &lt; Sum of Incomes) Then it's 
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="LK7-tI-Adc"/>
                 </viewController>
+                <exit id="qd5-Cd-pAE" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbK-04-gNG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2960.8695652173915" y="-1302.4553571428571"/>
         </scene>

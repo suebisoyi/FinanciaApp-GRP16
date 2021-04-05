@@ -1,17 +1,13 @@
 //
-//  PaymentOptionsController.swift
+//  AccountsViewController1ViewController.swift
 //  Financia
 //
-//  Created by Harman Bath on 2021-03-23.
+//  Created by Harman Bath on 2021-04-05.
 //
 
 import UIKit
 
-class PaymentOptionsController: UIViewController {
-    
-    @IBAction func unwindToPaymentOptionsViewController(sender : UIStoryboardSegue){
-        
-    }
+class AccountsViewController1ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
