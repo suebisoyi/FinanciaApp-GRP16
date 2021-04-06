@@ -87,6 +87,7 @@
 		C7D06667261378B4002BAFF2 /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = C7D06666261378B4002BAFF2 /* Auth0 */; };
 		C7D0666B2613790A002BAFF2 /* SiteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D066692613790A002BAFF2 /* SiteCell.swift */; };
 		C7D0666C2613790A002BAFF2 /* WordBankWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0666A2613790A002BAFF2 /* WordBankWords.swift */; };
+		C7D0666F261CA800002BAFF2 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0666E261CA800002BAFF2 /* LoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -173,6 +174,7 @@
 		C7D0666426137876002BAFF2 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		C7D066692613790A002BAFF2 /* SiteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiteCell.swift; sourceTree = "<group>"; };
 		C7D0666A2613790A002BAFF2 /* WordBankWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordBankWords.swift; sourceTree = "<group>"; };
+		C7D0666E261CA800002BAFF2 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,6 +321,7 @@
 				1DF1606A25F1946400407401 /* CalculatorController.swift */,
 				1DF1606D25F1948000407401 /* AdvisorChatController.swift */,
 				1D3B154525F43E9D00596B4F /* ToolsController.swift */,
+				C7D0666E261CA800002BAFF2 /* LoginController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				1D06051D25F149BE00BD37F9 /* ViewController.swift in Sources */,
 				1DF1606E25F1948000407401 /* AdvisorChatController.swift in Sources */,
 				1DF1606B25F1946400407401 /* CalculatorController.swift in Sources */,
+				C7D0666F261CA800002BAFF2 /* LoginController.swift in Sources */,
 				1D06051925F149BE00BD37F9 /* AppDelegate.swift in Sources */,
 				1D06051B25F149BE00BD37F9 /* SceneDelegate.swift in Sources */,
 				1D3B154625F43E9D00596B4F /* ToolsController.swift in Sources */,

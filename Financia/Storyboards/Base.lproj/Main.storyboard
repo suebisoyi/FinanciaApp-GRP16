@@ -9,6 +9,22 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="Ubj-Rg-d2k">
+            <objects>
+                <viewController id="pWc-2O-3Iw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZvG-GE-0L9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fia-y4-aHB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tnd-1E-gGI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1sB-Dw-Wmd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-741" y="-12"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Financia" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,14 +45,6 @@
                                 <rect key="frame" x="-166" y="-84" width="747" height="634"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sum-Xw-mie">
-                                <rect key="frame" x="26" y="571" width="363" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="button_log-in.png"/>
-                                <connections>
-                                    <segue destination="rMO-qp-uIx" kind="presentation" modalPresentationStyle="fullScreen" id="I8t-eL-fF5"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGT-tJ-lku">
                                 <rect key="frame" x="26" y="636" width="359" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -56,6 +64,14 @@
                                 <state key="normal" image="button_go-to-homepage.png"/>
                                 <connections>
                                     <segue destination="T2W-rK-DSq" kind="presentation" modalPresentationStyle="fullScreen" id="JMc-lt-oNb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sum-Xw-mie">
+                                <rect key="frame" x="24" y="558" width="363" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="button_log-in.png"/>
+                                <connections>
+                                    <segue destination="pWc-2O-3Iw" kind="show" id="mCw-xA-Zu4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -120,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Whm-kW-GrA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-601.44927536231887" y="1082.8125"/>
+            <point key="canvasLocation" x="-813" y="790"/>
         </scene>
         <!--Main Menu View Controller-->
         <scene sceneID="9fg-kk-fDe">
@@ -1003,8 +1019,7 @@ Label prints "Surplus Cast!" IF( sum of expenses &lt; Sum of Incomes) Then it's 
     <inferredMetricsTieBreakers>
         <segue reference="xI3-sP-lFW"/>
         <segue reference="d1a-wl-A74"/>
-        <segue reference="jOe-dd-Vsm"/>
-        <segue reference="8Zd-Wm-XpE"/>
+        <segue reference="JMc-lt-oNb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1Backg.jpg" width="1080" height="1696"/>
