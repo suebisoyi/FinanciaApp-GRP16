@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C29D1BB260A394700BBA8EF /* CFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C29D1BA260A394700BBA8EF /* CFViewController.swift */; };
 		0C649C8626137289008C0BE9 /* FinalCFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C649C8526137289008C0BE9 /* FinalCFViewController.swift */; };
+		0C649C89261C814E008C0BE9 /* TVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C649C88261C814E008C0BE9 /* TVMViewController.swift */; };
 		1D06051925F149BE00BD37F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D06051825F149BE00BD37F9 /* AppDelegate.swift */; };
 		1D06051B25F149BE00BD37F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D06051A25F149BE00BD37F9 /* SceneDelegate.swift */; };
 		1D06051D25F149BE00BD37F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D06051C25F149BE00BD37F9 /* ViewController.swift */; };
@@ -87,6 +88,7 @@
 /* Begin PBXFileReference section */
 		0C29D1BA260A394700BBA8EF /* CFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFViewController.swift; sourceTree = "<group>"; };
 		0C649C8526137289008C0BE9 /* FinalCFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCFViewController.swift; sourceTree = "<group>"; };
+		0C649C88261C814E008C0BE9 /* TVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMViewController.swift; sourceTree = "<group>"; };
 		1D06051525F149BE00BD37F9 /* Financia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Financia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D06051825F149BE00BD37F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D06051A25F149BE00BD37F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 				1D3B154525F43E9D00596B4F /* ToolsController.swift */,
 				0C29D1BA260A394700BBA8EF /* CFViewController.swift */,
 				0C649C8526137289008C0BE9 /* FinalCFViewController.swift */,
+				0C649C88261C814E008C0BE9 /* TVMViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				1D06051D25F149BE00BD37F9 /* ViewController.swift in Sources */,
 				1DF1606E25F1948000407401 /* AdvisorChatController.swift in Sources */,
 				1DF1606B25F1946400407401 /* CalculatorController.swift in Sources */,
+				0C649C89261C814E008C0BE9 /* TVMViewController.swift in Sources */,
 				1D06051925F149BE00BD37F9 /* AppDelegate.swift in Sources */,
 				1D06051B25F149BE00BD37F9 /* SceneDelegate.swift in Sources */,
 				1D3B154625F43E9D00596B4F /* ToolsController.swift in Sources */,
@@ -596,6 +600,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Financia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -614,6 +619,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Financia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
