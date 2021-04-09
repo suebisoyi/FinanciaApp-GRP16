@@ -15,7 +15,6 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         
         tableView.backgroundView  = UIImageView(image: UIImage(named: "tblBackground.jpg"))
-
     }
 
 
