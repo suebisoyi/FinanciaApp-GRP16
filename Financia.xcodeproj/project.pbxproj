@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C29D1BB260A394700BBA8EF /* CFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C29D1BA260A394700BBA8EF /* CFViewController.swift */; };
-		0C649C8626137289008C0BE9 /* FinalCFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C649C8526137289008C0BE9 /* FinalCFViewController.swift */; };
+		0C3C2F5F2621F148002C625C /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3C2F5D2621F133002C625C /* libsqlite3.0.tbd */; };
+		0C3C2F612621F158002C625C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3C2F5E2621F13C002C625C /* libsqlite3.tbd */; };
+		0C3C2F662621FB59002C625C /* NewStatementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3C2F652621FB59002C625C /* NewStatementViewModel.swift */; };
+		0C3C2F75262218E5002C625C /* MyBudgets.db in Resources */ = {isa = PBXBuildFile; fileRef = 0C3C2F74262218E5002C625C /* MyBudgets.db */; };
+		0C3C2F8226222168002C625C /* StatementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3C2F8126222168002C625C /* StatementTableViewCell.swift */; };
+		0C3C2F85262223A3002C625C /* StatementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3C2F84262223A3002C625C /* StatementViewModel.swift */; };
+		0C3C2F8926222714002C625C /* StatementTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3C2F8826222714002C625C /* StatementTableViewController.swift */; };
 		0C649C89261C814E008C0BE9 /* TVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C649C88261C814E008C0BE9 /* TVMViewController.swift */; };
+		0C649C9A26214072008C0BE9 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C649C9926214072008C0BE9 /* UIViewController.swift */; };
+		0C649CA12621446F008C0BE9 /* CFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C649CA02621446F008C0BE9 /* CFViewController.swift */; };
+		0C649CA5262151FE008C0BE9 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C649CA4262151FE008C0BE9 /* Statement.swift */; };
 		1D06051925F149BE00BD37F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D06051825F149BE00BD37F9 /* AppDelegate.swift */; };
 		1D06051B25F149BE00BD37F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D06051A25F149BE00BD37F9 /* SceneDelegate.swift */; };
 		1D06051D25F149BE00BD37F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D06051C25F149BE00BD37F9 /* ViewController.swift */; };
@@ -86,9 +94,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C29D1BA260A394700BBA8EF /* CFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFViewController.swift; sourceTree = "<group>"; };
-		0C649C8526137289008C0BE9 /* FinalCFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalCFViewController.swift; sourceTree = "<group>"; };
+		0C3C2F5D2621F133002C625C /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		0C3C2F5E2621F13C002C625C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0C3C2F652621FB59002C625C /* NewStatementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStatementViewModel.swift; sourceTree = "<group>"; };
+		0C3C2F74262218E5002C625C /* MyBudgets.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = MyBudgets.db; path = ../../../../MyBudgets.db; sourceTree = "<group>"; };
+		0C3C2F8126222168002C625C /* StatementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementTableViewCell.swift; sourceTree = "<group>"; };
+		0C3C2F84262223A3002C625C /* StatementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementViewModel.swift; sourceTree = "<group>"; };
+		0C3C2F8826222714002C625C /* StatementTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementTableViewController.swift; sourceTree = "<group>"; };
 		0C649C88261C814E008C0BE9 /* TVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMViewController.swift; sourceTree = "<group>"; };
+		0C649C9926214072008C0BE9 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		0C649CA02621446F008C0BE9 /* CFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFViewController.swift; sourceTree = "<group>"; };
+		0C649CA4262151FE008C0BE9 /* Statement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statement.swift; sourceTree = "<group>"; };
 		1D06051525F149BE00BD37F9 /* Financia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Financia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D06051825F149BE00BD37F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D06051A25F149BE00BD37F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -171,17 +187,70 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C3C2F612621F158002C625C /* libsqlite3.tbd in Frameworks */,
+				0C3C2F5F2621F148002C625C /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C3C2F5C2621F133002C625C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C3C2F5E2621F13C002C625C /* libsqlite3.tbd */,
+				0C3C2F5D2621F133002C625C /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C3C2F642621FB36002C625C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0C3C2F652621FB59002C625C /* NewStatementViewModel.swift */,
+				0C3C2F84262223A3002C625C /* StatementViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0C3C2F7B26222104002C625C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C3C2F8126222168002C625C /* StatementTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0C649C92262135D2008C0BE9 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				0C3C2F74262218E5002C625C /* MyBudgets.db */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		0C649C9C2621407C008C0BE9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0C649C9926214072008C0BE9 /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0C649C9E2621426B008C0BE9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C649CA4262151FE008C0BE9 /* Statement.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1D06050C25F149BE00BD37F9 = {
 			isa = PBXGroup;
 			children = (
 				1D06051725F149BE00BD37F9 /* Financia */,
 				1D06051625F149BE00BD37F9 /* Products */,
+				0C3C2F5C2621F133002C625C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -196,6 +265,11 @@
 		1D06051725F149BE00BD37F9 /* Financia */ = {
 			isa = PBXGroup;
 			children = (
+				0C3C2F7B26222104002C625C /* Views */,
+				0C3C2F642621FB36002C625C /* ViewModel */,
+				0C649C9E2621426B008C0BE9 /* Models */,
+				0C649C9C2621407C008C0BE9 /* Extensions */,
+				0C649C92262135D2008C0BE9 /* Database */,
 				1DF1602925F14A8F00407401 /* View Controllers */,
 				1DF1602825F14A6A00407401 /* Storyboards */,
 				1DF1602725F14A6400407401 /* Classes */,
@@ -302,9 +376,9 @@
 				1DF1606A25F1946400407401 /* CalculatorController.swift */,
 				1DF1606D25F1948000407401 /* AdvisorChatController.swift */,
 				1D3B154525F43E9D00596B4F /* ToolsController.swift */,
-				0C29D1BA260A394700BBA8EF /* CFViewController.swift */,
-				0C649C8526137289008C0BE9 /* FinalCFViewController.swift */,
 				0C649C88261C814E008C0BE9 /* TVMViewController.swift */,
+				0C649CA02621446F008C0BE9 /* CFViewController.swift */,
+				0C3C2F8826222714002C625C /* StatementTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -385,6 +459,7 @@
 				1D06052225F149C000BD37F9 /* Assets.xcassets in Resources */,
 				1D3B153725F4371D00596B4F /* i3.png in Resources */,
 				1D3B154925F43FD000596B4F /* search.jpg in Resources */,
+				0C3C2F75262218E5002C625C /* MyBudgets.db in Resources */,
 				1D3B155525F4426700596B4F /* button_time-value-of-money-calculator.png in Resources */,
 				1D3B152825F42EEC00596B4F /* b1.png in Resources */,
 				1D3B151F25F42AD600596B4F /* p4.png in Resources */,
@@ -438,20 +513,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C3C2F85262223A3002C625C /* StatementViewModel.swift in Sources */,
+				0C649C9A26214072008C0BE9 /* UIViewController.swift in Sources */,
 				1DF1603525F1674D00407401 /* LevelsController.swift in Sources */,
 				1D06051D25F149BE00BD37F9 /* ViewController.swift in Sources */,
 				1DF1606E25F1948000407401 /* AdvisorChatController.swift in Sources */,
 				1DF1606B25F1946400407401 /* CalculatorController.swift in Sources */,
+				0C649CA12621446F008C0BE9 /* CFViewController.swift in Sources */,
+				0C3C2F8226222168002C625C /* StatementTableViewCell.swift in Sources */,
 				0C649C89261C814E008C0BE9 /* TVMViewController.swift in Sources */,
 				1D06051925F149BE00BD37F9 /* AppDelegate.swift in Sources */,
 				1D06051B25F149BE00BD37F9 /* SceneDelegate.swift in Sources */,
 				1D3B154625F43E9D00596B4F /* ToolsController.swift in Sources */,
 				1DF1606825F1943600407401 /* MainMenuViewController.swift in Sources */,
 				1DF1606525F1942400407401 /* ChoiceController.swift in Sources */,
-				0C29D1BB260A394700BBA8EF /* CFViewController.swift in Sources */,
+				0C3C2F8926222714002C625C /* StatementTableViewController.swift in Sources */,
 				1DF1602F25F166E600407401 /* SurveyController.swift in Sources */,
-				0C649C8626137289008C0BE9 /* FinalCFViewController.swift in Sources */,
+				0C3C2F662621FB59002C625C /* NewStatementViewModel.swift in Sources */,
 				1DF1603925F1679100407401 /* BeginnerController.swift in Sources */,
+				0C649CA5262151FE008C0BE9 /* Statement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
