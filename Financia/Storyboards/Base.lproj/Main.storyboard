@@ -759,7 +759,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xJc-e0-0f5">
-                                <rect key="frame" x="89" y="433" width="243" height="32"/>
+                                <rect key="frame" x="89" y="493" width="243" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Income"/>
@@ -770,7 +770,7 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="View Budget Planner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjZ-6n-GKj">
-                                <rect key="frame" x="27" y="625" width="367" height="65"/>
+                                <rect key="frame" x="24" y="669" width="367" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
@@ -785,7 +785,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCM-7Y-0rh">
-                                <rect key="frame" x="126" y="516" width="162" height="54"/>
+                                <rect key="frame" x="126" y="550" width="162" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Save">
@@ -803,27 +803,31 @@
                                     <action selector="saveStatement:" destination="Pkz-lC-h3v" eventType="touchUpInside" id="QkF-9j-h9u"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter amount (no decimals)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9EC-8E-A3c">
-                                <rect key="frame" x="27" y="357" width="367" height="34"/>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="250" minValue="1" maxValue="500" translatesAutoresizingMaskIntoConstraints="NO" id="5By-gp-fgf">
+                                <rect key="frame" x="22" y="389" width="371" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
+                                <connections>
+                                    <action selector="onSlliderChange:" destination="Pkz-lC-h3v" eventType="valueChanged" id="eFp-tz-7Jr"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The amount is " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0X-3F-PyP">
+                                <rect key="frame" x="27" y="426" width="367" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CX6-l5-oJC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="amountField" destination="9EC-8E-A3c" id="dSy-Lm-Qim"/>
+                        <outlet property="amountField" destination="5By-gp-fgf" id="5dU-Yj-T6f"/>
+                        <outlet property="amountLabel" destination="R0X-3F-PyP" id="XEH-Yv-GeA"/>
                         <outlet property="incomeExpenseSwitch" destination="xJc-e0-0f5" id="KHX-Ga-k2W"/>
                         <outlet property="lblTable" destination="wjZ-6n-GKj" id="iwt-x4-6Q7"/>
                         <outlet property="nameField" destination="Crw-kb-Zzt" id="VKe-xu-O7c"/>
-                        <segue destination="rx7-XD-ZvY" kind="presentation" identifier="FormSegueToTable" id="eSM-ad-ucL"/>
+                        <segue destination="rx7-XD-ZvY" kind="show" identifier="FormSegueToTable" id="XE4-BR-dgz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rgp-hB-Zxh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1034,17 +1038,11 @@
                             <outlet property="delegate" destination="rx7-XD-ZvY" id="Jov-Zz-tjS"/>
                         </connections>
                     </tableView>
-                    <toolbarItems>
-                        <barButtonItem title="Back" width="123.5" id="I97-1h-Uyt">
-                            <connections>
-                                <segue destination="7Cu-cJ-6wR" kind="unwind" unwindAction="unwindToBudgetControllerWithSegue:" id="L5Z-uv-Tvo"/>
-                            </connections>
-                        </barButtonItem>
-                    </toolbarItems>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Jh0-ep-V86"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jGh-ac-ftw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="7Cu-cJ-6wR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1931.8840579710147" y="1501.3392857142856"/>
         </scene>

@@ -16,12 +16,26 @@ class StatementTableViewController: UITableViewController {
         super.viewDidLoad()
 
         title = "Budget Statement"
+    
     }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         loadData()
         tableView.reloadData()
+        
+        let net = mainDelegate.calculateNet()
+        let controller = UIAlertController(title: "Net Balance", message: "Your current net balance is $\(net).", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "OK", style: .default, handler: nil)
+        controller.addAction(ok)
+        present(controller, animated: true, completion: nil)    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        
     }
     
     private func loadData() {

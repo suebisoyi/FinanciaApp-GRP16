@@ -136,6 +136,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("unable to connect to DB")
         }
     }
+    
+    func calculateNet() -> Int {
+        var total : Int = 0
+    
+        var db : OpaquePointer? = nil
+        if sqlite3_open(self.databasePath, &db) == SQLITE_OK {
+            print("Successfully opened the connection")
+            
+            var queryStatement : OpaquePointer? = nil
+            var queryStatementString : String = "SELECT (Select SUM(Amount) AS INCOME FROM plan WHERE Type = 'Income') - (Select sum(Amount) FROM plan where type = 'Expense')"
+        
+            
+            if sqlite3_prepare_v2(db, queryStatementString, -1, &queryStatement, nil) == SQLITE_OK {
+                while sqlite3_step(queryStatement) == SQLITE_ROW
+                {
+                    total = Int(sqlite3_column_int(queryStatement, 0))
+        
+                    print("Testing tough query result.")
+                    print("\(total)")
+                }
+            }else{
+                print("Select statement could not be prepapred!")
+            }
+            sqlite3_finalize(queryStatement)
+            sqlite3_close(db)
+        }else{
+            print("Unable to open db")
+        }
+        return total
+    }
 
 func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
