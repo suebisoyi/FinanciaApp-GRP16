@@ -84,6 +84,7 @@
 		5F8A77A42609A5A8002153C5 /* AdvancedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A77A32609A5A8002153C5 /* AdvancedController.swift */; };
 		5F8A77A62609A5B4002153C5 /* PaymentOptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A77A52609A5B4002153C5 /* PaymentOptionsController.swift */; };
 		5FADE2C6261BCE5500AF7B5C /* AccountsViewController1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FADE2C5261BCE5500AF7B5C /* AccountsViewController1ViewController.swift */; };
+		5FE66ED02622888800E90630 /* AppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE66ECF2622888800E90630 /* AppointmentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -166,6 +167,7 @@
 		5F8A77A32609A5A8002153C5 /* AdvancedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedController.swift; sourceTree = "<group>"; };
 		5F8A77A52609A5B4002153C5 /* PaymentOptionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOptionsController.swift; sourceTree = "<group>"; };
 		5FADE2C5261BCE5500AF7B5C /* AccountsViewController1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController1ViewController.swift; sourceTree = "<group>"; };
+		5FE66ECF2622888800E90630 /* AppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +310,7 @@
 				5F8A77A32609A5A8002153C5 /* AdvancedController.swift */,
 				5F8A77A52609A5B4002153C5 /* PaymentOptionsController.swift */,
 				5FADE2C5261BCE5500AF7B5C /* AccountsViewController1ViewController.swift */,
+				5FE66ECF2622888800E90630 /* AppointmentViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 				1DF1606E25F1948000407401 /* AdvisorChatController.swift in Sources */,
 				1DF1606B25F1946400407401 /* CalculatorController.swift in Sources */,
 				1D06051925F149BE00BD37F9 /* AppDelegate.swift in Sources */,
+				5FE66ED02622888800E90630 /* AppointmentViewController.swift in Sources */,
 				1D06051B25F149BE00BD37F9 /* SceneDelegate.swift in Sources */,
 				5F8A77A12609A59A002153C5 /* IntermediateController.swift in Sources */,
 				1D3B154625F43E9D00596B4F /* ToolsController.swift in Sources */,
