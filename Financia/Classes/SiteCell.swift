@@ -1,9 +1,6 @@
 //
-//  SiteCell.swift
-//  W8SwiftTables2
 //
-//  Created by Jawaad Sheikh on 2018-03-14.
-//  Copyright © 2018 Jawaad Sheikh. All rights reserved.
+//  Created by Harman Bath
 //
 
 import UIKit

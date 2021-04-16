@@ -747,8 +747,8 @@ DQo
                                                 </attributes>
                                             </fragment>
                                             <fragment>
-                                                <mutableString key="content">are the reverse of secured loans. They include things like credit cards, student loans, or personal (signature) loans. Lenders take more of a risk by making this loan, because there is no asset to recover in case of default. This is why the interest rates are higher. If you’re turned down for unsecured credit, you may still be able to obtain secured loans. But you must have something of value that can be used as collateral.
-                                            An unsecured lender believes that you can repay the loan because of your financial resources. </mutableString>
+                                                <string key="content">are the reverse of secured loans. They include things like credit cards, student loans, or personal (signature) loans. Lenders take more of a risk by making this loan, because there is no asset to recover in case of default. This is why the interest rates are higher. If you’re turned down for unsecured credit, you may still be able to obtain secured loans. But you must have something of value that can be used as collateral.
+                                            An unsecured lender believes that you can repay the loan because of your financial resources. </string>
                                                 <attributes>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" metaFont="system" size="18"/>
@@ -784,13 +784,13 @@ DQo
                                                 </attributes>
                                             </fragment>
                                             <fragment>
-                                                <mutableString key="content">
+                                                <string key="content">
 -Credit Cards – There are different types of credit cards, but general credit cards bill once a month and charge interest if you do not pay the balance in full.
 -Personal (Signature) Loans – These loans can be used for many purposes, and can vary from a few hundred to tens of thousands of dollars.
 -Personal Lines of Credit – Similar to a credit card, a personal line of credit has an approved limit that you can use as needed. You can use this line of credit for almost anything, and you are only charged interest on the amount you spend.
 -Student Loans – Student loans are used to pay for college and are available through both the Department of Education and private lenders. Although it is an unsecured loan, tax returns can be garnished to pay unpaid student loans.
 -Some Home Improvement Loans
-</mutableString>
+</string>
                                                 <attributes>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" metaFont="system" size="18"/>
@@ -883,7 +883,7 @@ DQo
                                         <color key="backgroundColor" red="1" green="0.64106465830000003" blue="0.53993075859999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <mutableString key="content"> (1) How to get a personal(unsecured) loan in 8 steps
+                                                <string key="content"> (1) How to get a personal(unsecured) loan in 8 steps
 Run the numbers. 
 Check your credit score. 
 Consider your options. 
@@ -898,7 +898,7 @@ Review your budget.
 Evaluate the value of potential collateral. 
 Shop around for the best loan. 
 Submit a formal application.
-</mutableString>
+</string>
                                                 <attributes>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" metaFont="system" size="18"/>
@@ -984,7 +984,7 @@ Submit a formal application.
                                         <color key="backgroundColor" red="1" green="0.64106465830000003" blue="0.53993075859999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <mutableString key="content">(1) 4 Personal Loan Tips That Will Pay Off
+                                                <string key="content">(1) 4 Personal Loan Tips That Will Pay Off
 -Get pre-qualified by multiple lenders. Don't fall for the advertised rates on bank's websites and marquee signs.
 -Compare the APRs. The interest rate a lender quotes you may not be what you pay on an annual basis to carry the loan.
 -Look closely at the fees to have the loan.
@@ -996,7 +996,7 @@ Don't ask for too much cash.
 Consider a co-signer.
 Find the right lender.
 (3) What's the easiest place to get a loan? The easiest banks to get a personal loan from are USAA and Wells Fargo. USAA does not disclose a minimum credit score requirement, but their website indicates that they consider people with scores below the fair credit range (below 640). So even people with bad credit may be able to qualify.
-</mutableString>
+</string>
                                                 <attributes>
                                                     <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" metaFont="system" size="18"/>
@@ -2271,7 +2271,7 @@ Find the right lender.
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRt-Qc-7HF">
-                                <rect key="frame" x="35" y="712" width="345" height="57"/>
+                                <rect key="frame" x="35" y="781" width="345" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="button_done.png"/>
                                 <connections>
@@ -2279,7 +2279,7 @@ Find the right lender.
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sss-Fm-Wen">
-                                <rect key="frame" x="15" y="589" width="356" height="47"/>
+                                <rect key="frame" x="20" y="573" width="356" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Contact Method">
@@ -2290,9 +2290,23 @@ Find the right lender.
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preferred Contact Method: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgO-Mg-wjc">
-                                <rect key="frame" x="92" y="550" width="230" height="31"/>
+                                <rect key="frame" x="92" y="534" width="230" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jlN-d0-IZZ" customClass="PhoneNumberTextField" customModule="PhoneNumberKit">
+                                <rect key="frame" x="40" y="636" width="336" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usK-Wa-Bg1">
+                                <rect key="frame" x="44" y="678" width="336" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">If you are unsure about your contry prefix, you can either not include it or click on the flag     icon in the text box to select a country prefix!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2304,12 +2318,13 @@ Find the right lender.
                         <outlet property="btnSelectContactMethod" destination="Sss-Fm-Wen" id="vkI-u0-R9I"/>
                         <outlet property="btnSelectFinTopic" destination="Gta-Ts-uDZ" id="7cb-9r-oKD"/>
                         <outlet property="datePicker" destination="uV4-lL-6wI" id="hE5-Em-Iny"/>
+                        <outlet property="textFieldPhoneNumber" destination="jlN-d0-IZZ" id="5Bl-Vr-WTe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zu8-xT-0rt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="sN1-ie-Id0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3519" y="1501"/>
+            <point key="canvasLocation" x="3518.840579710145" y="1500.6696428571429"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

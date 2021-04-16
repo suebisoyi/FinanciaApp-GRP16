@@ -26,27 +26,28 @@ class TVMViewController: UIViewController {
     }
     
 
-    @IBAction func onCalculate(_ sender: Any) {
     
-        if(interest.text == "" || money.text == "" || compoundRate.text == "" || years.text == ""){
-            solution.text = "At least one of the fields is missing values!";
-        }else{
-            //FV = $5,000 x (1 + (5% / 1) ^ (1 x 2) = $5,512.50
-            //PV = $1,100 / (1 + (5% / 1) ^ (1 x 1) = $1,047
-            
-            
-            var finalValue = 0.00
-            if let doubleInterest = Double(interest.text!), let calcYears = Double(years.text!), let doubleCompound = Double(compoundRate.text!) {
-                finalValue = Double(1 + pow(((doubleInterest / 100) / doubleCompound), calcYears))
-            }
-                    
-            if(ss == "Present"){
-                solution.text = String(Double(money.text!)! * finalValue) + ".\nThe above calculation shows you that with a \(interest.text)% compounded \(compoundRate.text) times for \(years.text) year(s)."
-            }
-            else{
-                solution.text = String(Double(money.text!)! / finalValue) + ".\nThe above calculation shows you that with $\(money.text) and you're earning \(interest.text)% interest on that sum compounded for \(compoundRate.text) for \(years.text) year(s)."
-            }
-        }
+    @IBAction func onCalculate(_ sender: Any) {
+      
+          if(interest.text == "" || money.text == "" || compoundRate.text == "" || years.text == ""){
+              solution.text = "At least one of the fields is missing values!";
+          }else{
+              
+              var finalValue = 0.00
+              if let doubleInterest = Double(interest.text!), let calcYears = Double(years.text!), let doubleCompound = Double(compoundRate.text!) {
+                  var annualRate = doubleInterest / 100
+                  
+                    print("ss is " + ss)
+              if(ss == "Present"){
+                  finalValue = round(Double(money.text!)! / pow((1 + annualRate), calcYears * doubleCompound) * 100) / 100.0
+                solution.text = "The above calculation shows you that the future value of $\(money.text ?? "") with \(interest.text!)% interest compounded \(Int(compoundRate.text!) ?? 0) times for \(Int(years.text!) ?? 0) year(s) is worth $\(finalValue) today."
+              }
+              else{
+                  finalValue = round(Double(money.text!)! * pow((1 + annualRate), calcYears * doubleCompound) * 100) / 100.0
+                solution.text = "The above calculation shows you that with $\(money.text ?? "") and you're earning \(interest.text!)% interest on that sum compounded \(compoundRate.text ?? "") for \(years.text ?? "0") year(s) is worth $\(finalValue)."
+          }
+       }
+      }
     }
     
     

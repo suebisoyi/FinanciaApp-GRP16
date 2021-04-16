@@ -7,6 +7,7 @@
 
 import UIKit
 import MessageUI
+import PhoneNumberKit
 
 class CellClass: UITableViewCell{
     
@@ -26,6 +27,8 @@ class AppointmentViewController: UIViewController {
     @IBOutlet weak var btnSelectFinTopic: UIButton!
     
     @IBOutlet weak var btnSelectContactMethod: UIButton!
+    
+    @IBOutlet weak var textFieldPhoneNumber: PhoneNumberTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,13 +108,71 @@ func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) ->
 func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     selectedButton.setTitle(dataSource[indexPath.row], for: .normal)
     removeTransparentView()
+    
+    if dataSource[indexPath.row].description == "Home Phone" ||
+        dataSource[indexPath.row].description == "Mobile Phone" {
+        textFieldPhoneNumber.isEnabled = true
+        
+        textFieldPhoneNumber.withExamplePlaceholder = true
+        textFieldPhoneNumber.defaultRegion = "CA"
+        textFieldPhoneNumber.withFlag = true
+        textFieldPhoneNumber.withDefaultPickerUI = true
+        textFieldPhoneNumber.withPrefix = true
+        textFieldPhoneNumber.maxDigits = 15
+    }
+    
+    if dataSource[indexPath.row].description == "Email" {
+        textFieldPhoneNumber.isEnabled = false
+        textFieldPhoneNumber.withExamplePlaceholder = false
+       
+        textFieldPhoneNumber.withFlag = false
+        textFieldPhoneNumber.withDefaultPickerUI = false
+        textFieldPhoneNumber.withPrefix = false
+    }
 }
 
 func appointmentConfirmAlert(){
-    let alertController = UIAlertController(title: "Success!", message: "An advisor will be in contact with you shortly. Please check your email shortly.", preferredStyle: .alert)
-    let alertaction = UIAlertAction(title: "Confirm", style: .cancel, handler: nil)
-    alertController.addAction(alertaction)
-    self.present(alertController, animated: true, completion: nil)
+    let phoneNumberKit = PhoneNumberKit()
+    let dateFormatter = DateFormatter()
+    //dateFormatter.dateFormat = "HH:mm E, d MMM y"
+    dateFormatter.dateStyle = .full
+    dateFormatter.timeStyle = .short
+    
+    if selectedButton.titleLabel?.text == "Email" {
+        let alertController = UIAlertController(title: "Success!", message: "An advisor will be in contact with you shortly.\n Please remember to check your email shortly.\n The meeting is scheduled to be on \(dateFormatter.string(from: datePicker.date)) and will be about \(String(describing: btnSelectFinTopic.titleLabel!.text!))", preferredStyle: .alert)
+        let alertaction = UIAlertAction(title: "Confirm", style: .cancel, handler: {action in  self.presentingViewController?.dismiss(animated: true, completion: nil)})
+        alertController.addAction(alertaction)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    if selectedButton.titleLabel?.text == "Home Phone" ||
+        selectedButton.titleLabel?.text == "Mobile Phone" {
+        do {
+        let phoneNumber = try phoneNumberKit.parse(textFieldPhoneNumber?.text ?? "")
+    
+        
+        if selectedButton.titleLabel?.text == "Home Phone" {
+            let alertController = UIAlertController(title: "Success!", message: "An advisor will be in touch with you shortly. Please remember that the advisor will call your home phone:\n \(phoneNumberKit.format(phoneNumber, toType: .international)).\n The meeting is scheduled to be on \(dateFormatter.string(from: datePicker.date)) and will be about \(String(describing: btnSelectFinTopic.titleLabel!.text!)) \n", preferredStyle: .alert)
+            let alertaction = UIAlertAction(title: "Confirm", style: .cancel, handler: {action in  self.presentingViewController?.dismiss(animated: true, completion: nil)})
+            alertController.addAction(alertaction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+        
+        else if selectedButton.titleLabel?.text == "Mobile Phone" {
+            
+            let alertController = UIAlertController(title: "Success!", message: "An advisor will be in touch with you shortly. Please remember that the advisor will call your mobile phone:\n \(phoneNumberKit.format(phoneNumber, toType: .international)). \n The meeting is scheduled to be on \(dateFormatter.string(from: datePicker.date)) and will be about \(String(describing: btnSelectFinTopic.titleLabel!.text!)) \n", preferredStyle: .alert)
+            let alertaction = UIAlertAction(title: "Confirm", style: .cancel, handler: {action in  self.presentingViewController?.dismiss(animated: true, completion: nil)})
+            alertController.addAction(alertaction)
+            self.present(alertController, animated: true, completion: nil)
+            
+        }
+    
+    } catch {
+        let alertController = UIAlertController(title: "Invalid Phone Number!", message: "The Phone Number you have provided is nOT real!", preferredStyle: .alert)
+        let alertaction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        alertController.addAction(alertaction)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    }
 }
     
 }
