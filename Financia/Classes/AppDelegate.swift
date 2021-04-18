@@ -314,7 +314,69 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
               }
         return total
     }
+    
+    func getExpenses() -> [Int] {
+        var total : [Int] = []
+
+    
+        var db : OpaquePointer? = nil
+        if sqlite3_open(self.databasePath, &db) == SQLITE_OK {
+            print("Successfully opened the connection calculate")
+            
+            var queryStatement : OpaquePointer? = nil
+            var queryStatementString : String = "select Amount from plan where Type = 'Expense' order by Amount desc limit 3"
+
+            if sqlite3_prepare_v2(db, queryStatementString, -1, &queryStatement, nil) == SQLITE_OK {
+                      while sqlite3_step(queryStatement) == SQLITE_ROW
+                      {
+                          let sum : Int = Int(sqlite3_column_int(queryStatement, 0))
+                          
+                            total.append(sum)
+                      }
+                  }else{
+                      print("Select statement could not be prepapred!")
+                  }
+                  sqlite3_finalize(queryStatement)
+                  sqlite3_close(db)
+              }else{
+                  print("Unable to open db")
+              }
+        return total
+    }
+    
+    func getExpensesNames() -> [String] {
+        var expenseList : [String] = []
+
+    
+        var db : OpaquePointer? = nil
+        if sqlite3_open(self.databasePath, &db) == SQLITE_OK {
+            print("Successfully opened the connection calculate")
+            
+            var queryStatement : OpaquePointer? = nil
+            var queryStatementString : String = "select Name from plan where Type = 'Expense' order by Amount desc limit 3"
+
+            if sqlite3_prepare_v2(db, queryStatementString, -1, &queryStatement, nil) == SQLITE_OK {
+                      while sqlite3_step(queryStatement) == SQLITE_ROW
+                      {
+                        let cexpenses = sqlite3_column_text(queryStatement, 0)
+                        
+                        let expense = String(cString: cexpenses!)
+                        
+                        expenseList.append(expense)
+                      }
+                  }else{
+                      print("Select statement could not be prepapred!")
+                  }
+                  sqlite3_finalize(queryStatement)
+                  sqlite3_close(db)
+              }else{
+                  print("Unable to open db")
+              }
+        return expenseList
+    }
+    
 }
+
 
 func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)

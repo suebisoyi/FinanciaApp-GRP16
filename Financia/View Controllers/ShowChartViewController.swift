@@ -17,6 +17,8 @@ class ShowChartViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var pieView: PieChartView!
     let statementCat = ["Expenses", "Income"]
     var statementValues : [Int] = []
+    var barChartLabels : [String] = []
+    var barChartValues : [Int] = []
     @IBOutlet weak var lineChart: BarChartView!
 
     override func viewDidLoad() {
@@ -24,12 +26,15 @@ class ShowChartViewController: UIViewController, ChartViewDelegate {
         pieView.legend.font = UIFont.systemFont(ofSize: 15.0)
         loadData()
         let incomeExpense = mainDelegate.sumExpensesIncome()
+        barChartLabels = mainDelegate.getExpensesNames() ?? [""]
+        barChartValues = mainDelegate.getExpenses() ?? [0]
         statementValues = incomeExpense
         customizeChart(dataPoints: statementCat, values: statementValues.map{ Double($0) })
         lineChart.delegate = self
         
     }
     
+   
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
@@ -37,11 +42,9 @@ class ShowChartViewController: UIViewController, ChartViewDelegate {
         //view.addSubview(lineChart)
         
         var entries = [BarChartDataEntry]()
-        
-        var lines = ["a", "b", "c"]
-        
-        for x in 0..<3 {
-            var barchentry = BarChartDataEntry(x: Double(x), y: Double(5))
+                
+        for x in 0..<barChartValues.count {
+            var barchentry = BarChartDataEntry(x: Double(x), y: Double(barChartValues[x]))
             entries.append(barchentry)
         }
     
@@ -51,13 +54,11 @@ class ShowChartViewController: UIViewController, ChartViewDelegate {
         let data = BarChartData(dataSet: set)
         data.barWidth = 0.2
         
-        lineChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: lines)
-        lineChart.xAxis.labelPosition = .top
+        lineChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: barChartLabels)
+        lineChart.xAxis.labelPosition = .topInside
         lineChart.xAxis.granularity = 1
         lineChart.rightAxis.enabled = false
         lineChart.zoom(scaleX: 1.5, scaleY: 1, x: 0, y: 0)
-        lineChart.setVisibleXRangeMinimum(10)
-        lineChart.setVisibleXRangeMaximum(10)
         let formatter = NumberFormatter()
         formatter.numberStyle = .none
         lineChart.leftAxis.valueFormatter = DefaultAxisValueFormatter(formatter: formatter)
@@ -84,11 +85,20 @@ class ShowChartViewController: UIViewController, ChartViewDelegate {
         var dataEntries : [ChartDataEntry] = []
         
         for i in 0..<dataPoints.count {
-            let dataEntry = PieChartDataEntry(value: values[i], label: dataPoints[i], data: dataPoints[i] as AnyObject)
-            dataEntries.append(dataEntry)
+            if(values.count == 0){
+                let dummy  = [1.0,2.0,3.0,4.0,5.0]
+                let dataEntry = PieChartDataEntry(value: dummy[i], label: dataPoints[i], data: dataPoints[i] as AnyObject)
+                dataEntries.append(dataEntry)
+                
+            }else{
+                let dataEntry = PieChartDataEntry(value: values[i], label: dataPoints[i], data: dataPoints[i] as AnyObject)
+                dataEntries.append(dataEntry)
+                
+            }
+            
         }
         
-        let pieChartDataSet = PieChartDataSet(entries: dataEntries, label: "")
+        let pieChartDataSet = PieChartDataSet(entries: dataEntries, label: "---- Income and Expenses")
         pieChartDataSet.colors = colorsOfCharts(numbbersOfColor: dataPoints.count)
         
         let pieChartData = PieChartData(dataSet: pieChartDataSet)

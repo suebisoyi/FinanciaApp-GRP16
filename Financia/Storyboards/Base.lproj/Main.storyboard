@@ -1625,12 +1625,12 @@ Find the right lender.
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c3c-kL-jJQ" customClass="PieChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="143" width="414" height="272"/>
+                                <rect key="frame" x="0.0" y="143" width="414" height="304"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kXT-d8-yDW" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="457" width="414" height="359"/>
+                                <rect key="frame" x="0.0" y="524" width="414" height="356"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -1646,7 +1646,7 @@ Find the right lender.
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Top 3 Expenses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gu-hr-ed5">
-                                <rect key="frame" x="147" y="423" width="121" height="21"/>
+                                <rect key="frame" x="147" y="479" width="121" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
