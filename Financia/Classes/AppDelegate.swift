@@ -1,3 +1,4 @@
+
 //
 //  AppDelegate.swift
 //  Financia
@@ -284,14 +285,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         return total
     }
+    
+    func sumExpensesIncome() -> [Int] {
+        var total : [Int] = []
 
     
-//---------------------------------------
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+        var db : OpaquePointer? = nil
+        if sqlite3_open(self.databasePath, &db) == SQLITE_OK {
+            print("Successfully opened the connection calculate")
+            
+            var queryStatement : OpaquePointer? = nil
+            var queryStatementString : String = "select sum(amount) from plan group by Type"
+
+            if sqlite3_prepare_v2(db, queryStatementString, -1, &queryStatement, nil) == SQLITE_OK {
+                      while sqlite3_step(queryStatement) == SQLITE_ROW
+                      {
+                          let sum : Int = Int(sqlite3_column_int(queryStatement, 0))
+                          
+                            total.append(sum)
+                      }
+                  }else{
+                      print("Select statement could not be prepapred!")
+                  }
+                  sqlite3_finalize(queryStatement)
+                  sqlite3_close(db)
+              }else{
+                  print("Unable to open db")
+              }
+        return total
+    }
+}
+
+func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
        
-    }}
-
+    } 

@@ -10,6 +10,8 @@
 		0C5E8E032620D6CA00552C57 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5E8E022620D6CA00552C57 /* Question.swift */; };
 		0C5E8E062620D71000552C57 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5E8E052620D71000552C57 /* QuestionBank.swift */; };
 		0C5E8E0A2620E1E100552C57 /* interest-ratePIC.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5E8E092620E1E000552C57 /* interest-ratePIC.png */; };
+		0CAEA78F262B72A8004D27C1 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 0CAEA78E262B72A8004D27C1 /* Charts */; };
+		0CAEA792262B73FE004D27C1 /* ShowChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAEA791262B73FE004D27C1 /* ShowChartViewController.swift */; };
 		0CF771492622185F00FA0552 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF771482622185F00FA0552 /* SessionManager.swift */; };
 		0CF7714C262221CD00FA0552 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF7714B262221CD00FA0552 /* UserProfileController.swift */; };
 		0CF7714F26222CE100FA0552 /* InterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF7714E26222CE100FA0552 /* InterController.swift */; };
@@ -113,6 +115,7 @@
 		0C5E8E022620D6CA00552C57 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		0C5E8E052620D71000552C57 /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
 		0C5E8E092620E1E000552C57 /* interest-ratePIC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "interest-ratePIC.png"; sourceTree = "<group>"; };
+		0CAEA791262B73FE004D27C1 /* ShowChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowChartViewController.swift; sourceTree = "<group>"; };
 		0CF771482622185F00FA0552 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		0CF7714B262221CD00FA0552 /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		0CF7714E26222CE100FA0552 /* InterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterController.swift; sourceTree = "<group>"; };
@@ -217,6 +220,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CAEA78F262B72A8004D27C1 /* Charts in Frameworks */,
 				0CF771822624D5E600FA0552 /* libsqlite3.tbd in Frameworks */,
 				1DF35AEA262A15970061AC0F /* PhoneNumberKit in Frameworks */,
 				0CF771812624D5E600FA0552 /* libsqlite3.0.tbd in Frameworks */,
@@ -375,8 +379,8 @@
 		1DF1602925F14A8F00407401 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1D4434F926250106007253D4 /* AppointmentViewController.swift */,
 				1D4434F22624FFF8007253D4 /* AdvisorChatController.swift */,
+				1D4434F926250106007253D4 /* AppointmentViewController.swift */,
 				C7D0665F26137868002BAFF2 /* WordBankTableController.swift */,
 				1D06051C25F149BE00BD37F9 /* ViewController.swift */,
 				1DF1602E25F166E600407401 /* SurveyController.swift */,
@@ -392,6 +396,7 @@
 				0CF77162262367B500FA0552 /* TVMViewController.swift */,
 				0CF77165262367F200FA0552 /* CFViewController.swift */,
 				0CF771682623685500FA0552 /* StatementTableViewController.swift */,
+				0CAEA791262B73FE004D27C1 /* ShowChartViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -424,6 +429,7 @@
 			packageProductDependencies = (
 				C7D06666261378B4002BAFF2 /* Auth0 */,
 				1DF35AE9262A15970061AC0F /* PhoneNumberKit */,
+				0CAEA78E262B72A8004D27C1 /* Charts */,
 			);
 			productName = Financia;
 			productReference = 1D06051525F149BE00BD37F9 /* Financia.app */;
@@ -455,6 +461,7 @@
 			packageReferences = (
 				C7D06665261378B4002BAFF2 /* XCRemoteSwiftPackageReference "Auth0.swift" */,
 				1DF35AE8262A15970061AC0F /* XCRemoteSwiftPackageReference "PhoneNumberKit" */,
+				0CAEA78D262B72A8004D27C1 /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = 1D06051625F149BE00BD37F9 /* Products */;
 			projectDirPath = "";
@@ -568,6 +575,7 @@
 				0CF7714F26222CE100FA0552 /* InterController.swift in Sources */,
 				0CF7717226236DF800FA0552 /* Statement.swift in Sources */,
 				0CF7716C26236D7A00FA0552 /* NewStatementViewModel.swift in Sources */,
+				0CAEA792262B73FE004D27C1 /* ShowChartViewController.swift in Sources */,
 				C7D0666C2613790A002BAFF2 /* WordBankWords.swift in Sources */,
 				C7D0666B2613790A002BAFF2 /* SiteCell.swift in Sources */,
 				1DF1606525F1942400407401 /* ChoiceController.swift in Sources */,
@@ -785,6 +793,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0CAEA78D262B72A8004D27C1 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
 		1DF35AE8262A15970061AC0F /* XCRemoteSwiftPackageReference "PhoneNumberKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/marmelroy/PhoneNumberKit.git";
@@ -804,6 +820,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0CAEA78E262B72A8004D27C1 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CAEA78D262B72A8004D27C1 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
 		1DF35AE9262A15970061AC0F /* PhoneNumberKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1DF35AE8262A15970061AC0F /* XCRemoteSwiftPackageReference "PhoneNumberKit" */;

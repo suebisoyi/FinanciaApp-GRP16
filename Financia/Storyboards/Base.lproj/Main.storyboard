@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -1609,6 +1609,50 @@ Find the right lender.
             </objects>
             <point key="canvasLocation" x="4479.7101449275369" y="107.8125"/>
         </scene>
+        <!--Show Chart View Controller-->
+        <scene sceneID="7A0-Pt-Yec">
+            <objects>
+                <viewController id="X9D-Zo-3Z3" customClass="ShowChartViewController" customModule="Financia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YcD-bJ-vVF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pie Chart View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ihf-z4-mjS">
+                                <rect key="frame" x="116" y="86" width="183" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c3c-kL-jJQ" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="143" width="414" height="662"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t70-Nq-svK">
+                                <rect key="frame" x="364" y="44" width="30" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onCloseClick:" destination="X9D-Zo-3Z3" eventType="touchUpInside" id="Xdq-bZ-e9C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bZD-e9-edt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="t70-Nq-svK" id="0rJ-ml-VEE"/>
+                        <outlet property="pieView" destination="c3c-kL-jJQ" id="iCD-pT-p6p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fMT-gl-4iW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4395.652173913044" y="1486.6071428571429"/>
+        </scene>
         <!--User Profile Controller-->
         <scene sceneID="vEH-9X-hc3">
             <objects>
@@ -1831,6 +1875,18 @@ Find the right lender.
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sb8-jZ-TWa">
+                                <rect key="frame" x="100" y="763" width="215" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Visual Representation">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickGraph:" destination="oKt-o0-Uoh" eventType="touchUpInside" id="J2n-Gx-Av0"/>
+                                    <segue destination="X9D-Zo-3Z3" kind="presentation" identifier="formToGraphic" modalPresentationStyle="fullScreen" id="3Mp-XX-oyO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ptn-dN-EPO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1841,6 +1897,7 @@ Find the right lender.
                         <outlet property="incomeExpenseSwitch" destination="hQv-Nf-Vqd" id="FQv-BQ-ZK1"/>
                         <outlet property="lblTable" destination="0QS-s5-BBH" id="PIH-QA-cDP"/>
                         <outlet property="nameField" destination="bZu-Zu-C6z" id="byQ-Yl-wO1"/>
+                        <outlet property="showGraphButton" destination="Sb8-jZ-TWa" id="g79-zm-nSH"/>
                         <segue destination="OyR-X9-tQQ" kind="show" identifier="FormSegueToTable" id="hsS-nB-m3l"/>
                     </connections>
                 </viewController>
@@ -2328,13 +2385,13 @@ Find the right lender.
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="aX6-Mh-nGc"/>
+        <segue reference="wOh-HW-EYc"/>
         <segue reference="yCQ-to-Tav"/>
         <segue reference="mhT-sz-1xj"/>
         <segue reference="ujd-3G-w90"/>
         <segue reference="Bld-8X-34b"/>
         <segue reference="sY2-lK-ffc"/>
-        <segue reference="diQ-yd-B24"/>
+        <segue reference="Shd-WT-Hod"/>
         <segue reference="mo3-UX-o4U"/>
     </inferredMetricsTieBreakers>
     <resources>
