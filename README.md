@@ -40,7 +40,6 @@ ViewControllers/MapViewController
 ViewController/WebViewController
 
 Said Abdikarim:
-
 New Feature: Graph Views to  ShowChartViewController
 Classes/NewStatementViewModel
 Classes/StatementViewModel
