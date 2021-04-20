@@ -5,6 +5,7 @@ Due to github branch merging issue on xcode projects, we decided to locally merg
 Group Member Contributions:
 
 Sudikshya Bisoyi:
+
 Extra Feature: PhoneNumber KIt in AppointmentViewController
 Created base project and App UI (custom images)
 Classes/Question.swift
@@ -29,6 +30,7 @@ ViewControllers/LoginController
 ViewControllers/UserProfileController
 
 Harman Bath:
+
 Extra Feature: Added MapKit to MapKitController
 Added pagenavigation(segues)
 Classes/SiteCell.swift
@@ -38,6 +40,7 @@ ViewControllers/MapViewController
 ViewController/WebViewController
 
 Said Abdikarim:
+
 New Feature: Graph Views to  ShowChartViewController
 Classes/NewStatementViewModel
 Classes/StatementViewModel
